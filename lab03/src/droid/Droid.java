@@ -4,11 +4,11 @@ import java.util.Random;
 public class Droid {
 
     Random random = new Random();
-    private String droidType;
-    private int amountDroids;
-    private int health;
-    private int damage;
-    private String name;
+    protected String droidType;
+    protected int amountDroids;
+    protected int health;
+    protected int damage;
+    protected String name;
 
     public Droid() { }
 

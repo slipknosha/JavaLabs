@@ -10,23 +10,10 @@ public class Battle {
     Scanner in = new Scanner(System.in);
     private int amountDroids;
 
-    public Battle(ArrayList<Droid> droids, int amountDroids) {
-        //System.out.print("Enter amount of droids: ");
-        //amountDroids = in.nextInt();
+    public Battle() { }
+
+    public void setAmountDroids(int amountDroids) {
         this.amountDroids = amountDroids;
-        //in.nextLine();
-        for(int counter = 0; counter < this.amountDroids; counter++) {
-            Droid droid = new Droid();
-            System.out.printf("Enter the name of droid %d: ", counter);
-            droid.setName(in.nextLine());
-            System.out.printf("Enter the health of the droid %d: ", counter);
-            droid.setHealth(in.nextInt());
-            in.nextLine();
-            System.out.printf("Enter the damage of the droid %d: ", counter);
-            droid.setDamage(in.nextInt());
-            in.nextLine();
-            droids.add(droid);
-        }
     }
 
     public void oneVersusOne(Droid firstDroid, Droid secondDroid) {
